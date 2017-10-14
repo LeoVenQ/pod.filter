@@ -12,23 +12,21 @@
 ItemDisplay[GOLD<1000]:
 //Health & Mana Potions
 ItemDisplay[rvl]: %PURPLE%R %WHITE%70%
-ItemDisplay[hp4]: %RED%(%WHITE%H%RED%)
+ItemDisplay[hp4]:
 ItemDisplay[hp5]: %RED%!%WHITE%H+
-ItemDisplay[mp4]: %BLUE%(%WHITE%M%BLUE%)
+ItemDisplay[mp4]:
 ItemDisplay[mp5]: %BLUE%!%WHITE%M+
 ItemDisplay[rvs CLVL>65]: 
 ItemDisplay[rvs CLVL<66]: %PURPLE%r %WHITE%35%
 ItemDisplay[hp1 CLVL<15]: %RED%!%WHITE%Minor Heal
 ItemDisplay[hp2 CLVL<18]: %RED%!%WHITE%Light Heal
 ItemDisplay[hp3 CLVL<24]: %RED%!%WHITE%Healing
-ItemDisplay[hp4 CLVL<24]: %RED%!%WHITE%Healing
 ItemDisplay[hp1 CLVL>14]:
 ItemDisplay[hp2 CLVL>17]:
 ItemDisplay[hp3 CLVL>24]:
 ItemDisplay[mp1 CLVL<15]: %BLUE%!%WHITE%Minor Mana
 ItemDisplay[mp2 CLVL<20]: %BLUE%!%WHITE%Light Mana
 ItemDisplay[mp3 CLVL<26]: %BLUE%!%WHITE%Mana
-ItemDisplay[mp4 CLVL<26]: %BLUE%!%WHITE%Mana
 ItemDisplay[mp1 CLVL>14]:
 ItemDisplay[mp2 CLVL>19]:
 ItemDisplay[mp3 CLVL>25]:
@@ -61,14 +59,14 @@ ItemDisplay[bey]: %GOLD%Baal's Eye
 ItemDisplay[mbr]: %GOLD%Mephisto's Brain
 
 //Utility
-//ItemDisplay[tsc]: %GREEN%!%WHITE%TP
-ItemDisplay[tsc CLVL<41]: %GREEN%!%WHITE%TP
+//ItemDisplay[tsc]:
+ItemDisplay[tsc CLVL<41]:
 ItemDisplay[tsc CLVL>40]:
-//ItemDisplay[isc]: %GREEN%!%WHITE%ID
-ItemDisplay[isc CLVL<41]: %GREEN%!%WHITE%ID
+//ItemDisplay[isc]:
+ItemDisplay[isc CLVL<41]:
 ItemDisplay[isc CLVL>40]:
 //
-ItemDisplay[wms CLVL<60]: %GREEN%!%WHITE%Thaw
+ItemDisplay[wms CLVL<60]:
 ItemDisplay[wms CLVL>59]:
 //ItemDisplay[yps]: %GREEN%!%WHITE%Antidote
 ItemDisplay[yps]:
@@ -579,9 +577,9 @@ ItemDisplay[uea !ETH NMAG SOCK>2 DEF>465]: %DGREEN%%NAME% %YELLOW%[%SOCKETS%]
 ItemDisplay[utp !ETH NMAG !SOCK=1 !SOCK=2 DEF>550]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%]
 ItemDisplay[utp !ETH NMAG SOCK>2 DEF>509]: %DGREEN%%NAME% %YELLOW%[%SOCKETS%]
 //Standard Dusk Shroud, Wyrmhide, Archon Plate
-ItemDisplay[uui !ETH NMAG !SOCK=1]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
-ItemDisplay[uea !ETH NMAG !SOCK=1]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
-ItemDisplay[utp !ETH NMAG !SOCK=1]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[uui !ETH NMAG !SOCK=1 !SOCK=2]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[uea !ETH NMAG !SOCK=1 !SOCK=2]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[utp !ETH NMAG !SOCK=1 !SOCK=2]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
 
 //Any Elite Armor ETH
 ItemDisplay[uui ETH NMAG !SUP SOCK=0]: ETH %NAME%
@@ -724,8 +722,8 @@ ItemDisplay[uar NMAG !SUP SOCK>1]: %NAME% [%SOCKETS%]
 ItemDisplay[utp NMAG !SUP SOCK>1]: %NAME% [%SOCKETS%]
 
 //0soc 2soc 3soc Light Plate
-ItemDisplay[NMAG SOCK>1 ltp]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
-ItemDisplay[NMAG SOCK=0 ltp]: %NAME%
+ItemDisplay[NMAG SOCK>1 ltp]:
+ItemDisplay[NMAG SOCK=0 ltp]:
 ItemDisplay[NMAG SOCK=1 ltp]:
 //0 soc 2soc 3soc Mage Plate 
 ItemDisplay[NMAG SOCK>1 xtp]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
@@ -742,19 +740,19 @@ ItemDisplay[uit !ETH MAG !ID]: %BLUE%%NAME%
 ItemDisplay[uit MAG SOCK=4 FBR=30]: %PURPLE%%NAME% ¤ JMOD ¤
 
 //Paladin Shields Top Tier Elite non-eth, Medium-High Eth, Basic (ILVL restriction)
-ItemDisplay[CL3 !ETH NMAG RES>39 (SOCK=3 OR SOCK=4)]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%]
-ItemDisplay[CL3 !ETH NMAG RES>25 SOCK=0]: %DGREEN%%NAME%
-ItemDisplay[CL3 !ETH NMAG RES>29 (SOCK=3 OR SOCK=4)]: %DGREEN%%NAME% %YELLOW%[%SOCKETS%]
-ItemDisplay[CL3 !ETH NMAG RES>0 (SOCK=3 OR SOCK=4)]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
-ItemDisplay[CL3 ETH NMAG RES>29 SOCK=0]: %DGREEN%ETH %NAME%
-ItemDisplay[CL3 ETH NMAG RES>39 SOCK=4]: %DGREEN%ETH %NAME% %PURPLE%[%SOCKETS%]
-ItemDisplay[CL3 ETH NMAG RES>29 SOCK=4]: %DGREEN%ETH %NAME% %YELLOW%[%SOCKETS%]
-ItemDisplay[CL3 ETH NMAG RES>0 SOCK=4]: %DGREEN%ETH %NAME% %GRAY%[%SOCKETS%]
-ItemDisplay[CL3 ETH NMAG RES>0 SOCK=4]: %DGREEN%ETH %NAME% %GRAY%[%SOCKETS%]
-ItemDisplay[CL3 !ETH NMAG RES>0 SOCK=3 ILVL<76]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
-ItemDisplay[CL3 !ETH NMAG RES>0 SOCK=4 ILVL<76]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
-ItemDisplay[CL3 !ETH NMAG RES>30 SOCK=4]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
-ItemDisplay[CL3 !ETH NMAG RES>30 SOCK=3]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[CL3 !ETH NMAG RES>40 (SOCK=3 OR SOCK=4)]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%]
+ItemDisplay[CL3 !ETH NMAG RES>40 SOCK=0]: %DGREEN%%NAME%
+ItemDisplay[CL3 !ETH NMAG RES>40 (SOCK=3 OR SOCK=4)]: %DGREEN%%NAME% %YELLOW%[%SOCKETS%]
+ItemDisplay[CL3 !ETH NMAG RES>40 (SOCK=3 OR SOCK=4)]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[CL3 ETH NMAG RES>40 SOCK=0]: %DGREEN%ETH %NAME%
+ItemDisplay[CL3 ETH NMAG RES>40 SOCK=4]: %DGREEN%ETH %NAME% %PURPLE%[%SOCKETS%]
+ItemDisplay[CL3 ETH NMAG RES>40 SOCK=4]: %DGREEN%ETH %NAME% %YELLOW%[%SOCKETS%]
+ItemDisplay[CL3 ETH NMAG RES>40 SOCK=4]: %DGREEN%ETH %NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[CL3 ETH NMAG RES>40 SOCK=4]: %DGREEN%ETH %NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[CL3 !ETH NMAG RES>40 SOCK=3 ILVL<76]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[CL3 !ETH NMAG RES>40 SOCK=4 ILVL<76]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[CL3 !ETH NMAG RES>40 SOCK=4]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[CL3 !ETH NMAG RES>40 SOCK=3]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
 
 //Claws
 //ItemDisplay[CL5 (CLSK6>1 AND SK271>1)]: %PURPLE%%NAME%
@@ -852,6 +850,9 @@ ItemDisplay[NMAG ETH SOCK=5 7gs]: ETH %NAME% %GRAY%[%SOCKETS%]
 ItemDisplay[NMAG ETH SOCK=4 7fb]: ETH %NAME% %GRAY%[%SOCKETS%]
 ItemDisplay[NMAG ETH SOCK=4 7gd]: ETH %NAME% %GRAY%[%SOCKETS%]
 ItemDisplay[NMAG ETH SOCK=4 7gs]: ETH %NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[NMAG ETH SOCK=3 7fb]: ETH %NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[NMAG ETH SOCK=3 7gd]: ETH %NAME% %GRAY%[%SOCKETS%]
+ItemDisplay[NMAG ETH SOCK=3 7gs]: ETH %NAME% %GRAY%[%SOCKETS%]
 ItemDisplay[NMAG ETH SOCK=0 7fb]: ETH %NAME% %GRAY%[%SOCKETS%]
 ItemDisplay[NMAG ETH SOCK=0 7gd]: ETH %NAME% %GRAY%[%SOCKETS%]
 ItemDisplay[NMAG ETH SOCK=0 7gs]: ETH %NAME% %GRAY%[%SOCKETS%]
@@ -879,9 +880,9 @@ ItemDisplay[WP11 NMAG SOCK=5 SK58>2]: %DGREEN%%NAME% %PURPLE%[%SOCKETS%]
 
 
 //4os Flail, Larzuk Gaurantee = HOTO = Heart of the Oak
-ItemDisplay[fla NMAG SOCK=4]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
-Itemdisplay[fla NMAG SOCK=0 ILVL<41)]: %DGREEN%%NAME% %WHITE%[L%ILVL%]
-Itemdisplay[fla NMAG SOCK=0 ILVL>25]: %DGREEN%%NAME% %WHITE%[L%ILVL%]
+ItemDisplay[fla NMAG SOCK=4]:
+Itemdisplay[fla NMAG SOCK=0 ILVL<41)]:
+Itemdisplay[fla NMAG SOCK=0 ILVL>25]:
 
 //5os Phase Blade, Zerker Axe = Grief
 ItemDisplay[7cr NMAG SOCK=5]: %DGREEN%%NAME% %YELLOW%[%SOCKETS%]
@@ -1091,6 +1092,7 @@ ItemDisplay[CL4 NMAG (SK83>1 AND SK79>1) !SOCK=1]: %DGREEN%%NAME% %YELLOW%[%SOCK
 ItemDisplay[CL4 NMAG (SK83>1 AND SK91>1) !SOCK=1]: %DGREEN%%NAME% %YELLOW%[%SOCKETS%]
 
 //non-magic shrunken heads with +3 to primaries
+ItemDisplay[CL4 NMAG (SK67>2 OR SK92>2 OR SK83>2 OR SK84>2) SOCK=3]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
 ItemDisplay[CL4 NMAG (SK67>2 OR SK92>2 OR SK83>2 OR SK84>2) SOCK=2]: %DGREEN%%NAME% %GRAY%[%SOCKETS%]
 ItemDisplay[CL4 NMAG (SK67>2 OR SK92>2 OR SK83>2 OR SK84>2) SOCK=0]: %DGREEN%%NAME%
 
@@ -1289,12 +1291,12 @@ ItemDisplay[RARE WP13 !ID]: %YELLOW%%NAME%
 //Weapons: Axe, Mace, Sword, Dagger, Throwing Weapon, Javelin, Spear, Polearm, Bow, Crossbow
 ItemDisplay[RARE WP1 !ID ILVL>65]:
 ItemDisplay[RARE WP2 !ID ILVL>65]:
-//ItemDisplay[RARE WP3 !ID ILVL>65]:
+ItemDisplay[RARE WP3 !ID ILVL>65]:
 ItemDisplay[RARE WP4 !ID ILVL>65]:
 ItemDisplay[RARE WP5 !ID ILVL>65]:
 ItemDisplay[RARE WP6 !ID ILVL>65]:
-//ItemDisplay[RARE WP7 !ID ILVL>65]:
-//ItemDisplay[RARE WP8 !ID ILVL>65]:
+ItemDisplay[RARE WP7 !ID ILVL>65]:
+ItemDisplay[RARE WP8 !ID ILVL>65]:
 ItemDisplay[RARE WP9 !ID ILVL>65]:
 ItemDisplay[RARE WP10 !ID ILVL>65]:
 //Armor: Helm (Not Circlet), Body, Shield (ilvl 66+)
@@ -1304,12 +1306,12 @@ ItemDisplay[RARE EQ3 !ID (ILVL>65 AND ILVL<85)]: %NAME%
 //Show Rare Elite Armor
 ItemDisplay[ELT RARE ARMOR !ID ILVL>84)]: %NAME%
 //Hide Helm, Body, Shield
-//ItemDisplay[RARE EQ1 !ID ILVL>65]:
-//ItemDisplay[RARE EQ2 !ID ILVL>65]:
-//ItemDisplay[RARE EQ3 !ID ILVL>65]:
-//ItemDisplay[RARE EQ1 !ID ILVL>84]:
-//ItemDisplay[RARE EQ2 !ID ILVL>84]:
-//ItemDisplay[RARE EQ3 !ID ILVL>84]:
+ItemDisplay[RARE EQ1 !ID ILVL>65]:
+ItemDisplay[RARE EQ2 !ID ILVL>65]:
+ItemDisplay[RARE EQ3 !ID ILVL>65]:
+ItemDisplay[RARE EQ1 !ID ILVL>84]:
+ItemDisplay[RARE EQ2 !ID ILVL>84]:
+ItemDisplay[RARE EQ3 !ID ILVL>84]:
 
 
 //MAGIC
