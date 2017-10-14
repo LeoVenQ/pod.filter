@@ -21,12 +21,14 @@ ItemDisplay[rvs CLVL<66]: %PURPLE%r %WHITE%35%
 ItemDisplay[hp1 CLVL<15]: %RED%!%WHITE%Minor Heal
 ItemDisplay[hp2 CLVL<18]: %RED%!%WHITE%Light Heal
 ItemDisplay[hp3 CLVL<24]: %RED%!%WHITE%Healing
+ItemDisplay[hp4 CLVL<24]: %RED%!%WHITE%Healing
 ItemDisplay[hp1 CLVL>14]:
 ItemDisplay[hp2 CLVL>17]:
 ItemDisplay[hp3 CLVL>24]:
 ItemDisplay[mp1 CLVL<15]: %BLUE%!%WHITE%Minor Mana
 ItemDisplay[mp2 CLVL<20]: %BLUE%!%WHITE%Light Mana
 ItemDisplay[mp3 CLVL<26]: %BLUE%!%WHITE%Mana
+ItemDisplay[mp4 CLVL<26]: %BLUE%!%WHITE%Mana
 ItemDisplay[mp1 CLVL>14]:
 ItemDisplay[mp2 CLVL>19]:
 ItemDisplay[mp3 CLVL>25]:
